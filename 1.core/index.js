@@ -224,3 +224,19 @@ $("#four ul.hi li").click(function(){
 // $.type( "test" ); // "string"
 
 // 10.7 .index()
+// 10.7.1 无参数 - 在父元素中的索引
+// var one = $("#one").index();
+// console.log("index:" + one); //0
+// var four = $("#four").index();
+// console.log("index:" + four); //3
+// var div = $("div").index();
+// console.log("index:" + div); //1
+
+// 10.7.2 有字符串参数 - 在父元素中的指定类型元素的索引
+// var four = $("#four").index("div");
+// console.log("index:" + four); //1
+
+// 10.7.3 有jQuery对象参数 - 在父元素中的指定类型元素的索引
+// var div = $("div");
+// var four = $("#four");
+// console.log("index:" + div.index(four)); //1
