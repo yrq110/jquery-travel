@@ -83,7 +83,12 @@
  */
 
 // 3.1 在回调中使用队列
-// 入列方法 .queue() - 在队列中添加执行函数，
+// 入列方法 .queue() - 在队列中添加执行函数
+// $("p")
+//     .animate({fontSize:30}, 1000)
+//     .queue(function(){
+//         $("#message").html( "We're in the animation, baby!" );
+//     })
 // 出列方法1 .dequeue() - 移除匹配元素所绑定的队列中的第一个函数并执行
 // $("p")
 //     .animate({fontSize:30}, 1000)
